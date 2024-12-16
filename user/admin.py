@@ -3,6 +3,7 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
 from .models import User
 
+
 @admin.register(User)
 class UserAdmin(DjangoUserAdmin):
     """Define admin model for custom User model with no email field."""
